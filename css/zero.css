@@ -1,0 +1,430 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: Graphik, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #37383c;
+    /*min-width:942px;*/
+    overflow-x: hidden;
+}
+
+
+.menu_flexd{
+    left:0;
+    right:0;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 1px solid #d4d4d4;
+    background-color: #ffffff;
+    opacity: 0;
+}
+.scoll_nav{
+    margin:0 auto;
+    display: flex;
+    position: relative;
+    height: 100px;
+    width:90%;
+}
+    .scoll_nav div img{
+        display: none;
+        width: 20px;
+        cursor: pointer;
+    }
+    .Desktop_more{
+        padding-left:8%;
+        margin-top: 40px;
+    }
+.first_main{
+    /*position: relative;*/
+    display:flex;
+}
+.Basicsize{
+    width:50%;
+    height: 700px;
+    margin:0 auto;
+    display: inline-block;
+    /*position: absolute;*/
+    /*flex: 1;*/
+}
+
+.left_video{
+    /*test*/
+    background-color: aliceblue;
+}
+.right_words{
+    /*test*/
+    /*background-color: antiquewhite;*/
+    padding-left: 8%;
+}
+.Desktop_header_nav{
+    margin-left:auto;
+    margin-top: 15px;
+}
+    .Desktop_logo{
+        height: 30px;
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 28px;
+        color: #333;
+    }
+    .Desktop_nav{
+        font-size: 14px;
+        margin: 20px 0 30px 0;
+        /*float: right;*/
+        border-bottom: 2px solid transparent;/*css套路1.先将border颜色设置透明，选中时添加一个class使其有颜色*/
+    }
+    #Desktop_nav{
+        margin: 40px 0 60px 0;
+    }
+    nav ul{
+        list-style: none;
+        margin-left: -70px;
+    }
+    nav ul li{
+        float: left;
+        margin-left: 30px;
+    }
+    .menuChecked{
+        border-bottom: 2px solid #52ddcd;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #37383c;
+        padding: 8px 0;
+        transition: border .5s;
+    }
+    nav ul li a:hover{
+        border-bottom: 2px solid #52ddcd;
+        transition: border-color .5s;
+    }
+
+    .middle{
+        max-width: 450px;
+        min-width: 200px;
+    }
+    .Desktop_form{
+        padding-top: 15px;
+        margin:0 0 30px 0;
+    }
+        .Desktop_heading{
+            font-size: 42px;
+            font-weight: 200;
+            line-height:1;
+            margin-left: -2px
+        }
+
+        /*.Signup_button{
+            width: 100px;
+        }*/
+        .Signup_button_width{
+            margin: 30px 0 0 30px;
+            width: 110px !important;
+        }
+        .Desktop_text_p{
+            font-size: 14px;
+            max-width: 350px;
+        }
+        .SignupForm_input{
+            position: relative;
+            padding: 30px 0 90px 0;
+        }
+        .SignupForm_input_item{
+            position: absolute;
+        }
+        .SignupForm_input_item_text{
+            border:solid #c4c4c4;
+            border-width: 0 0 2px 0;
+            padding:13px 0;
+            outline: none;
+        }
+        .SignupForm_input_item_text:focus{
+            border:solid #949494;
+            border-width: 0 0 2px 0;
+        }
+        .SignupForm_button{
+            position: relative;
+        }
+        .SignupForm_button_transparent{
+            width: 150px;
+            position: relative;
+            line-height: 40px;
+            font-size: 12px;
+            /*置于上一层，如果不设置背景会在上面*/
+            z-index: 1;
+            /*设置透明、消除样式以显示div背景*/
+            background: transparent;
+            border:0;
+            outline: none;
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgba(55,56,60,.4);
+        }
+        .SignupForm_button_itemSelected{
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+        }
+        .SignupForm_button_background_33e2d1{
+            /*规定背景大小形状*/
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 150px;
+            height: 40px;
+
+            border-radius: 100px;
+            background: #33e2d1;
+            /*父元素relative情况下子元素设置为absolute会相对于父元素绝对定位*/
+            position: absolute;
+        }
+        .Desktop_small{
+            opacity: 0.6;
+            font-size: 10px;
+        }
+        .Desktop_link{
+            color: #37383c;
+        }
+main{
+    padding-top: 90px;
+}
+    .main_a1{
+        /*定义弹性盒子*/
+        display: flex;
+        flex-flow: wrap;
+        /*margin-bottom: 90px;*/
+        padding: 0 70px;
+    }
+        .theCard_intro_first{
+            margin: 0 0 60px 16.66666667%;
+            width: 50%;
+        }
+            .theCard_intro_heading{
+                font-size: 28px;
+                font-weight:600;
+                line-height:1.25;
+
+                margin-bottom: 30px;
+            }
+            .theCard_intro_text{
+                line-height: 1.5;
+            }
+        .theCard_intro_two{
+            position: relative;
+            margin-left: 16.66666667%;
+            width: 33.33333333%;
+        }
+        .theCard_intro_two:last-child{
+            margin-left: 8.33333333%;
+        }
+            .theCard_intro_debit_img img{
+                width: 47px;
+                position: absolute;
+            }
+            .theCard_intro_debit{
+                margin: 12px 0 0 70px;
+                font-weight:600;
+            }
+            .theCard_intro_two p{
+                margin: 30px 0 0 70px;
+            }
+        .theCard_intro_next::before{
+            content: '';
+            display: block;
+            margin: 190px 0 60px;
+            width: 110px;
+            height:2px;
+            background: #37383c;
+        }
+     .main_a2{
+         padding: 0 70px;
+     }
+        .theCard_container_first{
+            display: flex;
+            flex-flow: row-reverse;
+            height: 130px;
+            position: relative;
+
+            opacity: 1;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+            .theCard_container_first:first-child{
+                z-index: 5;
+            }
+            .theCard_container_first:nth-child(2){
+                z-index: 4;
+            }
+            .theCard_container_first:nth-child(3){
+                z-index: 3;
+            }
+        .theCard_item_content_0001{
+            margin: 0 0 30px;
+            width: 60%;
+            position: relative;
+        }
+        .theCard_item_heading_0001{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+        .theCard_item_desktopPercentage{
+            display: none;
+            position: absolute;
+            top:0;
+            right:0;
+            font-size: 16px;
+            font-weight:700;
+            color: #52ddcd;
+            line-height: 50px;
+        }
+        .theCard_item_desktopPercentage::after{
+            content: '';
+            width: 100px;
+            height: 1px;
+            background: #cccccc;
+            margin-left: 15px;
+            display: inline-block;
+        }
+        .theCard_item_text_0001{
+            font-size:12px;
+        }
+        /*picture*/
+        .theCard_item_picture_0001{
+            width:40%;
+            position: relative;
+        }
+        .theCard_item_picture_0001 img{
+            position: absolute;
+            left: 60px;
+            width: 100%;
+            bottom: -170%;
+        }
+
+/*媒体查询*/
+@media screen and (max-width: 1010px){
+    .right_words{
+        padding-left: 5% !important;
+        transition: 1s;
+    }
+    /*card 样式*/
+    .theCard_intro_first{
+        margin-left:0;
+        width:75%;
+    }
+    .theCard_intro_two{
+        margin-right:2%;
+        width: 48%;
+        margin-left:0;
+    }
+    .main_a1{
+        padding: 0 50px 90px 50px;
+        transition: 1s;
+    }
+    .theCard_intro_two:last-child{
+        margin-left: 2%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 942px){
+    .right_words{
+        padding-left: 20% !important;
+        transition: 1s;
+    }
+    .first_main{
+        display: inline !important;
+    }
+    .Basicsize{
+        width:100% !important;
+    }
+    /*防止导航挤成两行*/
+    .menu_flexd header{
+        min-width: 680px;
+    }
+    #Desktop_nav{
+        display: none;
+    }
+    /*card 样式*/
+    .theCard_intro_two {
+        margin-right: 2%;
+        width: 100%;
+        margin-left: 0;
+        transition: 1s;
+    }
+    .theCard_intro_two:last-child{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 650px){
+    .right_words{
+        padding-left: 10% !important;
+        transition: 1s;
+    }
+    /*隐藏导航*/
+    #Desktop_nav,.Desktop_header_nav{
+        display: none;
+    }
+    /*显示导航选择*/
+    .Desktop_logo{
+        padding-left: 15%;
+        transition: 1.5s;
+    }
+    .scoll_nav div img{
+        display: flex !important;
+    }
+}
+@media screen and (max-width: 450px){
+    .right_words{
+        padding-left: 2% !important;
+        transition: 1s;
+    }
+    .Desktop_text_p,.Desktop_heading{
+        max-width: 280px !important;
+    }
+    .Desktop_logo{
+        padding-left: 5% !important;
+        transition: 1s;
+    }
+    /*防止more图标看不到*/
+    .menu_flexd header{
+        min-width: 0px;
+    }
+    /*card 样式*/
+    .theCard_intro_first{
+        margin: 0 0 60px 2%;
+        width: 90%;
+    }
+    /*.theCard_intro_two {
+        margin-right: 1%;
+        width: 100%;
+        margin-left: 0;
+    }*/
+}
+/*min*/
+@media screen and (min-width: 1010px){
+    .theCard_item_heading_0001{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .theCard_item_desktopPercentage::after{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .theCard_item_content_0001{
+        margin: 0 0 0 16.66666667%;
+        width: 50%;
+    }
+    .theCard_item_desktopPercentage{
+        display: block;
+    }
+    .theCard_item_text_0001{
+        width:70%;
+        color: #b7b7b7;
+    }
+}
