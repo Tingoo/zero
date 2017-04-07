@@ -36,6 +36,15 @@ zero.prototype = {
                 that.menu.style="opacity: 0;transition: 0.5s;z-index: -1;top:-100px"
             }
             top1 = top2;
-        }
+        };
+        //main_a2添加鼠标滚动事件
+        $('.main_a2').hover(function(){ //closest获得匹配选择器的第一个祖先元素
+            /*$('.theCard_container_first').css('opacity',' 1').css('transform',' matrix(1, 0, 0, 1, 0, 0)');*/
+            $('.theCard_container_first').addClass("showTheCard");
+        });
+        $('.theCard_intro_two').hover(function(){ //closest获得匹配选择器的第一个祖先元素
+            /*$('.theCard_container_first').css('opacity',' 0').css('transform',' matrix(1, 0, 0, 1, -50, -50)').css('transition-duration','0s').css('transition-delay','0s');*/
+            $('.theCard_container_first').removeClass('showTheCard');
+        })
     }
 };

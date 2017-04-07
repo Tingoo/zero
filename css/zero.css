@@ -250,17 +250,37 @@ main{
             height: 130px;
             position: relative;
 
-            opacity: 1;
-            transform: matrix(1, 0, 0, 1, 0, 0);
+
         }
             .theCard_container_first:first-child{
                 z-index: 5;
+                opacity: 0;
+                transform: matrix(1, 0, 0, 1, -50, -50);
+                transition-duration: 1s;
             }
             .theCard_container_first:nth-child(2){
                 z-index: 4;
+                opacity: 0;
+                transform: matrix(1, 0, 0, 1, -50, -50);
+                transition-duration: 1s;
+                transition-delay: 0.2s;
             }
             .theCard_container_first:nth-child(3){
                 z-index: 3;
+                opacity: 0;
+                transform: matrix(1, 0, 0, 1, -50, -50);
+                transition-duration: 1s;
+                transition-delay: 0.4s;
+            }
+            .theCard_container_first:nth-child(4){
+                opacity: 0;
+                transform: matrix(1, 0, 0, 1, -50, -50);
+                transition-duration: 1s;
+                transition-delay: 0.6s;
+            }
+            .showTheCard{
+                opacity: 1!important;
+                transform: matrix(1, 0, 0, 1, 0, 0)!important;
             }
         .theCard_item_content_0001{
             margin: 0 0 30px;
@@ -302,7 +322,7 @@ main{
             position: absolute;
             left: 60px;
             width: 100%;
-            bottom: -170%;
+            bottom: -160%;
         }
 
 /*媒体查询*/
