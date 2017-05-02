@@ -242,7 +242,7 @@ main{
             background: #37383c;
         }
      .main_a2{
-         padding: 0 70px;
+         padding: 60px 20px 240px 60px;
      }
         .theCard_container_first{
             display: flex;
@@ -255,26 +255,26 @@ main{
             .theCard_container_first:first-child{
                 z-index: 5;
                 opacity: 0;
-                transform: matrix(1, 0, 0, 1, -50, -50);
+                transform: matrix(1, 0, 0, 1, -50, 50);
                 transition-duration: 1s;
             }
             .theCard_container_first:nth-child(2){
                 z-index: 4;
                 opacity: 0;
-                transform: matrix(1, 0, 0, 1, -50, -50);
+                transform: matrix(1, 0, 0, 1, -50, 50);
                 transition-duration: 1s;
                 transition-delay: 0.2s;
             }
             .theCard_container_first:nth-child(3){
                 z-index: 3;
                 opacity: 0;
-                transform: matrix(1, 0, 0, 1, -50, -50);
+                transform: matrix(1, 0, 0, 1, -50, 50);
                 transition-duration: 1s;
                 transition-delay: 0.4s;
             }
             .theCard_container_first:nth-child(4){
                 opacity: 0;
-                transform: matrix(1, 0, 0, 1, -50, -50);
+                transform: matrix(1, 0, 0, 1, -50, 50);
                 transition-duration: 1s;
                 transition-delay: 0.6s;
             }
@@ -315,15 +315,245 @@ main{
         }
         /*picture*/
         .theCard_item_picture_0001{
-            width:40%;
+            width:54%;
             position: relative;
         }
         .theCard_item_picture_0001 img{
             position: absolute;
             left: 60px;
             width: 100%;
-            bottom: -160%;
+            bottom: -210%;
         }
+     .main_a3{
+         margin:0 30px;
+         background-color: #f9f9f9;
+     }
+        .Graph_container_0001{
+            margin: 60px auto 10px;
+            padding: 0 70px;
+            max-width: none;
+        }
+            .Graph_content_0001{
+                display: flex;/* 盒子模型*/
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 0;
+                margin-right: 0;
+            }
+                .Graph_content_both_0001{
+                    width:50%;
+                }
+
+                    .Graph_content_heading_0001{
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 1;
+                        margin-bottom: 20px;
+                        position: relative;
+                        padding-left: 33.33333333%;
+                    }
+                    .Graph_content_heading_0001::before{
+                        content: '';
+                        display: block;
+                        width: 110px;
+                        height:2px;
+                        background: #37383c;
+                        top: -60px;
+                        position: absolute;
+                    }
+                    .Graph_content_text_0001{
+                        padding-left: 16.66666667%;
+                        max-width: 380px;
+                        box-sizing: content-box;
+                        margin: 0 0 15px;
+                        line-height: 1.5;
+                    }
+        .Graph_box_0001{}
+            .Graph_container_0002{
+                padding: 0 70px;
+                margin: 0 auto;
+            }
+                .Graph_row_0001{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                    .Graph_col_0001{
+                        width:50%;
+                    }
+                        .Graph_box_left_0001{
+                            margin: -60px 0 0 -30px;
+                        }
+                            .Graph_knobWrapper_0001{
+                                max-width: 550px;
+                                position: relative;
+                            }
+                                .knob_info_0001{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    margin: -20% 0 0 -20%;
+                                    width: 40%;
+                                    font-size: 14px;
+                                }
+                                    .knob_info_aspect_0001{
+                                        padding-top:100%;
+                                    }
+                                    .knob_info_content_0001{
+                                        display: flex;
+                                        flex-flow: column;
+                                        align-items: center;
+                                        justify-content: center;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                    }
+                                        .knob_spending_0001,.knob_balance_0001{
+                                            width: 190px;
+                                            max-width: 100%;
+                                        }
+                                        .knob_balance_0001{
+                                            margin-top: 30px;
+                                        }
+                                            .knob_heading_0001{
+                                                font-size: 12px;
+                                                white-space: nowrap;
+                                                margin:0 0 10px;
+                                            }
+                                        .knob_info_0001 .knob_spending_0001 input,.knob_info_0001 .knob_balance_0001 input{
+                                            margin: 0;
+                                            padding: 0;
+                                            font-family: inherit;
+                                            font-size: inherit;
+                                            font-weight: inherit;
+                                            line-height: inherit;
+                                            border: 0;
+                                            vertical-align: baseline;
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+                                            appearance: none;
+                                            width: 100%;
+                                            font-size: 28px;
+                                            color: #37383c;
+                                            border: solid #c4c4c4;
+                                            border-width: 0 0 1px;
+                                            background: transparent;
+                                        }
+                                        .knob_info_0001 .knob_spending_0001 input{
+                                            border-color: #30cfbf;
+                                        }
+                                        .knob_info_0001 .knob_balance_0001 input{
+                                            border-color: #486784;
+                                        }
+                                .Graph_knobs_1bGrL{
+                                    width:100%;
+                                    height:100%;
+                                }
+                        .Graph_box_right_0001{
+                            padding-left:16.66666667%;
+                            position: relative;
+                            margin: 0 auto;
+                        }
+                            .Graph_heading_0001{
+                                padding-top: 30px;
+                                font-size: 16px;
+                                margin:0 0 40px;
+                                font-weight:400;
+                                line-height:1.111;
+                                color: rgba(55,56,60,.4);
+                                width: 298px;
+
+                                border-top:1px solid rgba(55,56,60,.2);
+                            }
+                            .Graph_result_0001{
+                                font-weight:700;
+                                line-height:.8;
+                                color:#30cfbf;
+                                font-size: 50px;
+                                margin:0 0 15px;
+                            }
+                            .Graph_subtitle_0001{
+                                font-weight: 500;
+                                font-size: 18px;
+                            }
+                            .Graph_selector_0001{
+                                color: #95a5a9;
+                            }
+                                .Graph_card_0001{
+                                    display: none;
+                                }
+                                .Graph_card_0001:checked + .Graph_label_0001 .Graph_line_0001{
+                                    opacity: 1;
+                                }
+                                /*.Graph_card_0001:checked + .Graph_line_0001{
+                                    opacity: 1;
+                                }*/
+                                .Graph_card_0001:checked + .Graph_label_0001 .Graph_percentage_0001{
+                                    opacity: 1;
+                                }
+                                /*+是兄弟选择器*/
+                                .Graph_card_0001:checked + .Graph_label_0001{
+                                    font-weight: 600;
+                                    color: #37383c;
+                                }
+                                .Graph_card_0001:checked + .Graph_label_0001::before{
+                                    opacity: 1;
+                                    margin-left: 0;
+                                }
+                                .Graph_label_0001{
+                                    display: flex;/*弹性盒布局*/
+                                    justify-content: space-between; /*主轴上两端对齐*/
+                                    align-items: center; /*交叉轴上中间对齐*/
+                                    cursor: pointer;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;/*控制元素内文字及子元素不会被选中*/
+                                    transition: color 0.3s;
+                                    font-size: 14px;
+                                    max-width: 380px;
+
+                                }
+                                .Graph_label_0001:checked{
+                                    font-weight: 600;
+                                    color: #37383c;
+                                }
+                                .Graph_label_0001::before{
+                                    content: '\2022';
+                                    opacity:0;
+                                    margin: 0 10px 0 -15px;
+                                    font-size: 20px;
+                                    -webkit-transition: opacity .3s,margin .3s;
+                                    -moz-transition: opacity .3s,margin .3s;
+                                    -ms-transition: opacity .3s,margin .3s;
+                                    -o-transition: opacity .3s,margin .3s;
+                                    transition: opacity .3s,margin .3s;
+                                }
+                                .Graph_label_0001:hover::before{
+                                    opacity: 1;
+                                    margin-left:0;
+                                }
+                                    .Graph_line_0001{
+                                        flex:1;/*弹性盒布局,该项目所占比例为1*/
+                                        opacity: 0;
+                                        margin:0 15px;
+                                        height: 2px;
+                                        border-top:1px solid #30cfbf;
+                                    }
+                                    .Graph_percentage_0001{
+                                        opacity:0;
+                                        font-size: 14px;
+                                    }
+                                    .Graph_percentage_0001 span{
+                                        margin-left: 10px;
+                                        font-weight:200;
+                                        color: #95a5a9;
+                                    }
+
 
 /*媒体查询*/
 @media screen and (max-width: 1010px){
@@ -425,13 +655,9 @@ main{
     }*/
 }
 /*min*/
-@media screen and (min-width: 1010px){
-    .theCard_item_heading_0001{
-        font-size: 22px;
-        font-weight: 600;
-    }
-    .theCard_item_desktopPercentage::after{
-        width: 200px;
+@media screen and (min-width: 480px){
+    .Graph_line_0001{
+        margin:0 30px;
     }
 }
 
@@ -446,5 +672,53 @@ main{
     .theCard_item_text_0001{
         width:70%;
         color: #b7b7b7;
+    }
+    /*graph*/
+    .main_a3{
+        padding: 90px 0 0;
+    }
+
+    .Graph_result_0001{
+        font-size: 62px;
+    }
+    .knob_heading_0001{
+        font-size: 16px;
+        white-space: nowrap;
+        margin:0;
+    }
+    .Graph_label_0001{
+        font-size: 16px;
+    }
+    .Graph_percentage_0001{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1010px){
+    .theCard_item_heading_0001{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .theCard_item_desktopPercentage::after{
+        width: 200px;
+    }
+    /*graph*/
+    .main_a3{
+        margin: 0 30px;
+    }
+
+    .Graph_result_0001{
+        font-size: 96px;
+        margin:37px 0 37px;
+    }
+    .Graph_subtitle_0001{
+        margin:0 0 150px;
+    }
+    .Graph_label_0001{
+        margin-bottom:10px;
+        font-size: 18px;
+    }
+    .Graph_percentage_0001{
+        font-size: 18px;
     }
 }

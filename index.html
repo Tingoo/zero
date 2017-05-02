@@ -164,9 +164,164 @@
 
 
     </article>
+    <article class="main_a3">
+        <div class="Graph_container_0001">
+            <div class="Graph_content_0001">
+                <div class="Graph_content_both_0001">
+                    <div class="Graph_content_heading_0001">More money in your pocket</div>
+                </div>
+                <div class="Graph_content_both_0001">
+                    <div class="Graph_content_text_0001">Zero gives you the best cash rewards on purchases plus the highest interest on deposits.</div>
+                    <div class="Graph_content_text_0001">Enter your monthly spending and average daily balance to see how much cash back and interest Zero will put in your pocket.*</div>
+                </div>
+            </div>
+        </div>
+        <div class="Graph_box_0001">
+            <div class="Graph_container_0002">
+                <div class="Graph_row_0001">
+                    <div class="Graph_col_0001">
+                        <div class="Graph_box_left_0001" id="Graph_box_left">
+                            <div class="Graph_knobWrapper_0001">
+                                <div class="knob_info_0001">
+                                    <div class="knob_info_aspect_0001"></div>
+                                    <div class="knob_info_content_0001">
+                                        <div class="knob_spending_0001">
+                                            <div class="knob_spending_0001">
+                                                <div class="knob_heading_0001">Monthly Spending</div>
+                                                <input type="text" value="$2,500">
+                                            </div>
+                                        </div>
+                                        <div class="knob_balance_0001">
+                                            <div class="knob_heading_0001">Average Daily Balance</div>
+                                            <input type="text" value="$10,500">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="svgCircle">
+                                    <svg id="knob_info_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" class="Graph_knobs_1bGrL" width="600" height="600" viewBox="0 0 600 600" onload="initLoad(evt)" onmousedown="Grab(evt)" onmousemove="Drag(evt)" onmouseup="Drop(evt)">
+                                        <!--viewBox定义画布上可以显示的区域（前两个是坐标），fill填充颜色，stroke定义边框颜色， stroke-width定义边框宽度，cx cy定义圆点坐标x y，r是圆的半径，-->
+                                        <path id="backDrop" d="M 32.1876030760161 397.4757408478156 A 285,285 0 0 1 568.187603076 202.524259152 M 575.288860492 226.236572146 A 285 285, 0, 0, 1, 40.288860492 417.236572146" stroke="#b4cbcf" fill="transparent" stroke-width="2"></path>
+                                        <!--大写的代表绝对定位，小写的代表相对定位 M:move to  L:line to  H/V:x/y (垂直/平行线) Z闭合路径命令
+                                        弧形命令A rx(x半径) ry(y半径) x-axis-rotation(旋转弧度) large-arc-flag(角度大小，1表示大角度弧0表示小角度弧) sweep-flag(弧线方向，1表示顺时针从起点画到终点0表示逆时针) x y-->
+                                        <!--repeatCount指定动画将发生的次数-->
+                                        <path id="cir1"
+                                              d="M 32.1876030760161 397.4757408478156 A 285 285 0 0 1 312.35149521950893 15.267773924617984"
+                                              stroke="#30cfbf"
+                                              stroke-width="2"
+                                              fill="none" />
+                                        <path id="cir2"
+                                              d="M 575.288860492 226.236572146 A 285 285 0 0 1 502.41416343231174 500.6327651251248"
+                                              stroke="#486784"
+                                              stroke-width="2"
+                                              fill="transparent"/>
+
+                                        <!--fill="freeze"在动画激活持续时间结束后，文档持续时间的剩余时间里（或者直到动画重新开始）动画效果会“冻结”着。-->
+                                        <animateMotion
+                                                id="animateMotion_first"
+                                                xlink:href="#circle1"
+                                                dur="2s"
+                                                begin="knob_info_svg.mouseover"
+                                                repeatCount="1">
+                                            <mpath xlink:href="#cir1" />
+                                        </animateMotion>
+                                        <!--fill="freeze"在动画激活持续时间结束后，文档持续时间的剩余时间里（或者直到动画重新开始）动画效果会“冻结”着。-->
+                                        <animateMotion
+                                                id="animateMotion_next"
+                                                xlink:href="#circle2"
+                                                dur="2s"
+                                                begin="knob_info_svg.mouseover"
+                                                repeatCount="1">
+                                            <mpath xlink:href="#cir2" />
+                                        </animateMotion>
+
+
+                                        <circle class="circle1" id="circle1" cx="0" cy="0" r="9" fill="#30cfbf" opacity="1"></circle>
+                                        <circle class="circle2" id="circle2" cx="0" cy="0" r="9" fill="#486784" opacity="1"></circle>
+
+                                        <circle class="circle11" id="circle11" cx="32.1876030760161" cy="397.4757408478156" r="9" fill="#30cfbf" opacity="0" transform="translate(280.16389214349283 -382.2079669231976)">
+                                            <!--<animate
+                                                    attributeName="opacity"
+                                                    from="0"
+                                                    to="1"
+                                                    dur="3s"
+                                                    begin="animateMotion_first.end">
+                                            </animate>-->
+                                        </circle>
+                                        <circle class="circle22" id="circle22" cx="575.288860492" cy="226.236572146" r="9" fill="#486784" opacity="0" transform="translate(-72.87469705968829 274.39619297912486)">
+                                            <!--<animate
+                                                    attributeName="opacity"
+                                                    from="0"
+                                                    to="1"
+                                                    dur="3s"
+                                                    begin="animateMotion_next.end">
+                                            </animate>-->
+                                        </circle>
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Graph_col_0001">
+                        <div class="Graph_box_right_0001">
+                            <div class="Graph_heading_0001">In your pocket</div>
+                            <div class="Graph_result_0001">$1,021</div>
+                            <div class="Graph_subtitle_0001">more per year with Zerocard Carbon</div>
+                            <div class="Graph_selector_0001">
+                                <div>
+                                    <input type="radio" id="4" class="Graph_card_0001" value="4" checked="checked">
+                                    <lable class="Graph_label_0001">
+                                        <span>Carbon</span>
+                                        <span class="Graph_line_0001"></span>
+                                        <span class="Graph_percentage_0001">
+                                            3%
+                                            <span>Cash back</span>
+                                        </span>
+                                    </lable>
+                                </div>
+                                <div>
+                                    <input type="radio" id="3" class="Graph_card_0001" value="3">
+                                    <lable class="Graph_label_0001">
+                                        <span>Magnesium</span>
+                                        <span class="Graph_line_0001"></span>
+                                        <span class="Graph_percentage_0001">
+                                            2%
+                                            <span>Cash back</span>
+                                        </span>
+                                    </lable>
+                                </div>
+                                <div>
+                                    <input type="radio" id="2" class="Graph_card_0001" value="2">
+                                    <lable class="Graph_label_0001">
+                                        <span>Graphite</span>
+                                        <span class="Graph_line_0001"></span>
+                                        <span class="Graph_percentage_0001">
+                                            1.5%
+                                            <span>Cash back</span>
+                                        </span>
+                                    </lable>
+                                </div>
+                                <div>
+                                    <input type="radio" id="1" class="Graph_card_0001" value="1">
+                                    <lable class="Graph_label_0001">
+                                        <span>Quartz</span>
+                                        <span class="Graph_line_0001"></span>
+                                        <span class="Graph_percentage_0001">
+                                            1%
+                                            <span>Cash back</span>
+                                        </span>
+                                    </lable>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 </main>
 
-<script src="js/zero.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
